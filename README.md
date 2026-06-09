@@ -1,50 +1,312 @@
-# Financial_Dashboard
-Power BI Dashboard
+# 💳 Credit Card Analytics Dashboard
 
-Interactive Financial Dashboard built with Power BI, SQL, and Excel to turn raw credit card transaction data into actionable business insights. Features custom KPIs, trend analysis, and customer segmentation—helping identify revenue spikes, high-value clients, and growth opportunities at a glance.
+<p align="center">
+  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black">
+  <img src="https://img.shields.io/badge/Data%20Analysis-Business%20Intelligence-blue">
+  <img src="https://img.shields.io/badge/DAX-Advanced-success">
+  <img src="https://img.shields.io/badge/Project-Completed-brightgreen">
+</p>
 
-Project Objective:
+## 📖 Overview
 
-I wanted to turn raw financial data into something that’s not just numbers on a spreadsheet, but a story you can actually see and understand.
+This project presents an end-to-end Credit Card Analytics Dashboard developed in Power BI to analyze customer behavior, transaction trends, revenue generation, and business performance.
 
-This dashboard combines SQL and Excel data into an interactive Power BI report that helps track credit card usage, customer trends, and key financial metrics—making it easier to spot patterns, risks, and opportunities at a glance.
+The solution provides valuable insights into customer demographics, spending patterns, transaction activity, card performance, and profitability metrics through interactive visualizations and KPI monitoring.
 
-Dataset & Sources:
+The dashboard is divided into two analytical reports:
 
-SQL Database – Pulled transaction data, customer details, and credit card activity.
+* Credit Card Transaction Report
+* Credit Card Customer Report
 
-Excel Sheets – Added extra reports like customer additions and weekly performance logs.
+These reports help stakeholders identify high-value customer segments, optimize marketing strategies, and improve business decision-making.
 
-Data Cleaning – Fixed missing values, standardized date formats, merged datasets using customer IDs, and made sure everything was consistent before analysis.
+---
 
-Steps:
+## 🎯 Business Objective
 
-Queried and exported data from SQL.
+The objective of this project is to:
 
-Cleaned and organized files in Excel (formatted columns, removed duplicates, fixed errors).
+* Monitor overall credit card revenue and profitability.
+* Analyze customer spending behavior.
+* Evaluate transaction trends across different quarters.
+* Identify high-performing customer segments.
+* Understand demographic influences on revenue.
+* Support data-driven strategic decisions.
 
-Loaded the cleaned data into Power BI and built relationships between tables.
+---
 
-Created custom measures (e.g., total spend, avg. transaction value, month-over-month growth).
+# 📊 Dashboard 1: Credit Card Transaction Report
 
-Designed visuals: bar charts, line graphs, KPIs, and interactive filters for deep-dive analysis.
+## Dashboard Preview
 
-Iterated until the dashboard was clean, intuitive, and easy to navigate.
+<p align="center">
+  <img src="images/credit-card-transaction-report.png" width="100%">
+</p>
 
-Key Insights:
+## Key Performance Indicators
 
-Mid-month sees the highest spike in credit card usage—likely linked to billing cycles.
+| KPI                   | Value |
+| --------------------- | ----- |
+| Total Revenue         | 57M   |
+| Total Interest Earned | 8M    |
+| Transaction Amount    | 46M   |
+| Transaction Count     | 667K  |
 
-A small group of customers generates a disproportionate share of revenue, suggesting high-value client segments.
+---
 
-Newly onboarded customers start small but increase their spending over time, showing growth potential.
+## Transaction Analysis
 
-Action Items:
+### Revenue by Card Category
 
-Connect to a live SQL source for real-time updates.
+| Card Type | Revenue |
+| --------- | ------- |
+| Blue      | 47.19M  |
+| Silver    | 5.66M   |
+| Gold      | 2.53M   |
+| Platinum  | 1.14M   |
 
-Add forecasting models to predict future spend patterns.
+### Revenue by Expenditure Type
 
-Create customer segmentation for targeted marketing strategies.
+| Category      | Revenue |
+| ------------- | ------- |
+| Bills         | 14M     |
+| Entertainment | 10M     |
+| Fuel          | 10M     |
+| Grocery       | 9M      |
+| Food          | 8M      |
+| Travel        | 6M      |
 
-Integrate the dashboard into presentations for quick, data-driven decision-making.
+### Revenue by Chip Type
+
+| Chip Type | Revenue |
+| --------- | ------- |
+| Swipe     | 36M     |
+| Chip      | 17M     |
+| Online    | 4M      |
+
+### Revenue by Education
+
+* Graduate → 23M
+* High School → 11M
+* Unknown → 9M
+* Uneducated → 8M
+
+### Revenue by Occupation
+
+* Businessman → 18M
+* White Collar → 10M
+* Self Employed → 9M
+* Government → 8M
+* Blue Collar → 7M
+
+---
+
+## Key Insights
+
+✅ Blue Card customers contribute more than 80% of total revenue.
+
+✅ Bills, Entertainment, and Fuel are the highest spending categories.
+
+✅ Swipe transactions dominate customer usage patterns.
+
+✅ Graduate customers generate the highest revenue among all education groups.
+
+✅ Business professionals represent the most profitable customer segment.
+
+---
+
+# 👥 Dashboard 2: Credit Card Customer Report
+
+## Dashboard Preview
+
+<p align="center">
+  <img src="images/credit-card-customer-report.png" width="100%">
+</p>
+
+## Key Performance Indicators
+
+| KPI                         | Value |
+| --------------------------- | ----- |
+| Total Revenue               | 57M   |
+| Total Interest              | 8M    |
+| Total Customer Income       | 588M  |
+| Customer Satisfaction Score | 3.19  |
+
+---
+
+## Customer Analysis
+
+### Revenue by Gender
+
+| Gender | Revenue |
+| ------ | ------- |
+| Male   | 31M     |
+| Female | 26M     |
+
+### Revenue by Income Group
+
+| Income Group | Revenue |
+| ------------ | ------- |
+| High         | 23M     |
+| Medium       | 16M     |
+| Low          | 10M     |
+
+### Revenue by Age Group
+
+| Age Group | Revenue |
+| --------- | ------- |
+| 50-60     | 19M     |
+| 40-50     | 17M     |
+| 30-40     | 9M      |
+| 20-30     | 1M      |
+
+### Revenue by Marital Status
+
+| Status  | Revenue |
+| ------- | ------- |
+| Married | 29M     |
+| Single  | 24M     |
+| Unknown | Minimal |
+
+### Revenue by State
+
+Top performing states:
+
+* Texas
+* New York
+* California
+* Florida
+* New Jersey
+
+### Revenue by Education Level
+
+Highest revenue-generating education groups:
+
+* Graduate
+* High School
+* Unknown
+* Uneducated
+
+---
+
+## Customer Insights
+
+✅ Male customers contribute slightly higher revenue than female customers.
+
+✅ High-income customers generate the largest share of revenue.
+
+✅ Customers aged 40–60 years represent the most valuable segment.
+
+✅ Married customers contribute the highest revenue.
+
+✅ Texas, New York, and California emerge as top-performing states.
+
+---
+
+# 📈 Business Impact
+
+This dashboard enables financial institutions to:
+
+* Track revenue performance in real time.
+* Identify profitable customer segments.
+* Understand customer demographics and spending behavior.
+* Improve customer acquisition strategies.
+* Support targeted marketing campaigns.
+* Monitor transaction trends and profitability.
+
+---
+
+# 🛠️ Tools & Technologies
+
+* Power BI Desktop
+* Power Query
+* DAX
+* Data Modeling
+* Data Cleaning
+* Data Transformation
+* Data Visualization
+* Business Intelligence
+
+---
+
+# 🧠 Skills Demonstrated
+
+### Data Analytics
+
+* Exploratory Data Analysis (EDA)
+* KPI Development
+* Business Analysis
+* Customer Segmentation
+
+### Power BI
+
+* Interactive Dashboards
+* Data Modeling
+* Relationships
+* Drill-through Analysis
+* Slicers & Filters
+
+### DAX
+
+* Calculated Columns
+* Measures
+* Aggregations
+* Time Intelligence
+
+### Visualization
+
+* KPI Cards
+* Line Charts
+* Bar Charts
+* Comparative Analysis
+* Interactive Reporting
+
+---
+
+# 📂 Repository Structure
+
+```text
+Credit-Card-Analytics-Dashboard/
+│
+├── README.md
+├── Credit_Card_Report.pbix
+│
+├── Dataset/
+│   ├── credit_card.csv
+│   └── customer.csv
+│
+└── images/
+    ├── credit-card-transaction-report.png
+    └── credit-card-customer-report.png
+```
+
+---
+
+# 🚀 Getting Started
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/ItzMilitia/Dashboard.git
+```
+
+2. Open the `.pbix` file using Power BI Desktop.
+
+3. Refresh the dataset if required.
+
+4. Explore the interactive dashboard and insights.
+
+---
+
+# 📬 Connect With Me
+
+### Uzair Ahmad
+
+📊 Data Analytics Enthusiast
+📈 Power BI Developer
+💻 SQL & Business Intelligence
+
+**LinkedIn:** Add Your LinkedIn URL
+
+**GitHub:** https://github.com/ItzMilitia
+
