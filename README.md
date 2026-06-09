@@ -40,7 +40,7 @@ The objective of this project is to:
 ## Dashboard Preview
 
 <p align="center">
-  <img src="images/credit-card-transaction-report.png" width="100%">
+  <img src="credit-card-transaction-report.png" width="100%">
 </p>
 
 ## Key Performance Indicators
@@ -120,7 +120,7 @@ The objective of this project is to:
 ## Dashboard Preview
 
 <p align="center">
-  <img src="images/credit-card-customer-report.png" width="100%">
+  <img src="credit-card-customer-report.png" width="100%">
 </p>
 
 ## Key Performance Indicators
